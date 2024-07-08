@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add Clothes</h2>
+<form method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" required>
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" required>
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" required>
+    <button type="submit">Add Clothes</button>
+</form>
+{% endblock %}

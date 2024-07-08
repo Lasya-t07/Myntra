@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Select Clothes for Outfit</h2>
+<form method="post">
+    {% for cloth in clothes %}
+        <input type="checkbox" id="cloth-{{ cloth.id }}" name="clothes" value="{{ cloth.id }}">
+        <label for="cloth-{{ cloth.id }}">{{ cloth.name }}</label><br>
+    {% endfor %}
+    <button type="submit">Select Clothes</button>
+</form>
+{% endblock %}
